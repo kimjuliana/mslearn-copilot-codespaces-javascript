@@ -123,3 +123,91 @@ img.socialIcon {
   height: 30px;
   width: 30px;
 }
+
+/* add an amazing animation to the social icons */
+img.socialIcon:hover {
+  animation: rotate 0.5s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* add a nice hover effect to the buttons */
+button {
+  background-color: #4e567e;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #3f455e;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(4px);
+}
+
+button:disabled {
+  background-color: #6e6e6e;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background-color: #6e6e6e;
+  transform: none;
+}
+
+/* add a nice hover effect to the input fields */
+input {
+  border: 1px solid #4e567e;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  border-color: #3f455e;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3f455e;
+  box-shadow: 0 0 5px #3f455e;
+}
+
+/* add a nice hover effect to the text areas */
+textarea {
+  border: 1px solid #4e567e;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
